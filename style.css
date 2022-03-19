@@ -1,35 +1,21 @@
 body{
     width: 100%; 
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     margin: 0%;
     padding: 0%;
-}
-
-.bg-container{
-    width: 100%; 
-    min-width: 100%;
-    overflow-x: hidden;
-    height: 100vh;
-    color: #fff;
     background-image: linear-gradient(315deg,#63d471 0%, #364e40 74%);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     position: relative;
 }
 
 .bg-image{
+    width: 100%;
+    height: auto;
     opacity: 10%;
-    position: absolute;
-    bottom: 0%;
     background-repeat: no-repeat;
-    padding-bottom: 0%;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 8%; 
-    z-index: 2;
+    background-attachment:scroll;
 }
 
 .flex-blackjack-row-1, 
@@ -49,4 +35,73 @@ body{
     margin-right: 50%;
     margin-bottom: 20%;
     margin-left: 50%;
+}
+
+.flex-blackjack-row-3{
+    margin-left: 50%;
+    margin-bottom: 50%;
+}
+
+.btn-lg{
+    float: left;
+}
+
+#blackjack-hit-button{
+    color: #000000;
+    background-color: #37af00;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: small;
+    text-decoration: none;
+    border: none;
+    font-weight: 60;
+}
+#blackjack-stand-button{
+    color: #000000;
+    background-color: #dfd000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: small;
+    text-decoration: none;
+    border: none;
+    font-weight: 60;
+}
+#blackjack-deal-button{
+    color: #000000;
+    background-color: #11bac0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: small;
+    text-decoration: none;
+    border: none;
+    font-weight: 60;
+}
+#blackjack-restart-button{
+    color: #ffffff;
+    background-color: #c50f0f;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: small;
+    text-decoration: none;
+    border: none;
+    font-weight: 60;
 }
